@@ -5,6 +5,7 @@ let headCount = document.getElementById("headCount");
 let tailCount = document.getElementById("tailCount");
 let sound=document.querySelector("#sound");
 
+
 let headsNo = 1;
 let tailsNo = 1;
 
@@ -32,6 +33,10 @@ const coinFlip = () => {
     sound.play().catch(function(error) {
         console.error('Error playing the audio:', error);
     });
+
+    setTimeout(function() {
+        flipCoinBtn.classList.remove('active');
+    }, 200);
 
     if (coinFace === "heads") {
         heads.style.zIndex = '1';
