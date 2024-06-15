@@ -29,7 +29,9 @@ const coinFlip = () => {
     heads.classList.add("flip");
     tails.classList.add("flip");
 
-    sound.play();
+    sound.play().catch(function(error) {
+        console.error('Error playing the audio:', error);
+    });
 
     if (coinFace === "heads") {
         heads.style.zIndex = '1';
