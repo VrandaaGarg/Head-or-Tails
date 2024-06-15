@@ -78,6 +78,9 @@ img{
     border-radius: 1.9vh;
     font-size: 6vh;
     padding: 1vh;
+    user-select: none; /* Prevent text selection */
+    -webkit-user-select: none; /* Prevent text selection in Safari */
+    -ms-user-select: none; /* Prevent text selection in older IE versions */
 }
 
 .flipBtn:active{
