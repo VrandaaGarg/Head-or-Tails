@@ -36,7 +36,7 @@ const coinFlip = () => {
 
     setTimeout(function() {
         flipCoinBtn.classList.remove('active');
-    }, 200);
+    }, 1000);
 
     if (coinFace === "heads") {
         heads.style.zIndex = '1';
