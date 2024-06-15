@@ -7,7 +7,6 @@ Welcome to the **Head or Tail** coin flip game! This is a complete, responsive w
 - [Uses](#uses)
 - [How to Use](#how-to-use)
 - [Technology Stack](#technology-stack)
-- [Setup Instructions](#setup-instructions)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
