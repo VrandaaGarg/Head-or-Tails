@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: #EEEEEE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-size: 5vh;
+    background-color: #00224D;
+    height:max-content;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2vh;
+}
+h1{
+    font-size: 8vh;
+    margin-top: 6vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.intro{
+    opacity: 0.7;
+    margin: 2vh;
+}
+.imageContainer{
+    position: relative;
+    height:30vh;
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 50%;
+    height: 30vh;
+    position: absolute;
+    object-fit: cover;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.heads{
+    z-index: 0;
+}
+.tails{
+    z-index: 1;
+}
+
+@keyframes flip {
+    from {
+        transform: perspective(1000px) rotateX(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(360deg);
+    }
+}
+
+.flip {
+    animation: flip 1s;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+
+.points{
+    font-size: 9vh;
+}
+
+.flipBtn{
+    height: 10vh;
+    color: white;
+    background-color:#00224D;
+    display: inline;
+    border-radius: 1.5vh;
+    font-size: 6vh;
+    padding: 1vh;
+}
+
+.flipBtn:hover{
+    outline: 1vh solid black;
+    opacity:0.7;
+    cursor: pointer;
+}
