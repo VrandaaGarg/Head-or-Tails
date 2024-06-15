@@ -80,6 +80,12 @@ img{
     padding: 1vh;
 }
 
+.flipBtn:active{
+    outline: 1vh solid black;
+    opacity:0.7;
+    cursor: pointer;
+}
+
 .flipBtn:hover{
     outline: 1vh solid black;
     opacity:0.7;
