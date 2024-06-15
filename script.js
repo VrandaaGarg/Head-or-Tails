@@ -3,6 +3,7 @@ let heads = document.querySelector(".heads");
 let tails = document.querySelector(".tails");
 let headCount = document.getElementById("headCount");
 let tailCount = document.getElementById("tailCount");
+let sound=document.querySelector("#sound");
 
 let headsNo = 1;
 let tailsNo = 1;
@@ -27,6 +28,8 @@ const coinFlip = () => {
 
     heads.classList.add("flip");
     tails.classList.add("flip");
+
+    sound.play();
 
     if (coinFace === "heads") {
         heads.style.zIndex = '1';
